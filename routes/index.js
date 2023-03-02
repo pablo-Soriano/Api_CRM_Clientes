@@ -1,13 +1,17 @@
 const express = require('express');
 const router = express.Router();
 const clienteController = require('../controllers/clienteController');
+const productosController = require('../controllers/productosController');
+const pedidosController = require('../controllers/pedidosController');
+
 
 module.exports = function() {
 
-    //Agrega nuevos clinetes via POST
+// Rutas de Clientes
+    //Agrega nuevos clientes via POST
     router.post('/clientes', clienteController.nuevoCliente);
 
-    //obtener todos los clientes
+    //Muestra todos los clientes
     router.get('/clientes', clienteController.mostrarClientes);
 
     // Mostrar un cliente por medio de su id
@@ -18,6 +22,38 @@ module.exports = function() {
 
     // Eliminar un cliente
     router.delete('/clientes/:idCliente', clienteController.eliminaCliente);
+
+// Rutas de Productos
+    // Agrega nuevos productos via POST
+    router.post('/productos', productosController.subirArchivo ,productosController.nuevoProducto);
+
+    // Muestra todos los productos
+    router.get('/productos', productosController.mostrarProductos);
+
+    // Muestra un producto especifico por su ID
+    router.get('/productos/:idProducto', productosController.mostrarProducto);
+
+    // Actualizar un Producto
+    router.put('/productos/:idProducto', productosController.subirArchivo, productosController.actualizarProducto);
+
+    // Eliminar Productos
+    router.delete('/productos/:idProducto', productosController.eliminarProducto);
+
+// Rutas de Pedidos
+    // Agregar nuevos pedidos via POST
+    router.post('/pedidos', pedidosController.nuevoPedido);
+
+    // Mostrar todos los pedidos
+    router.get('/pedidos', pedidosController.mostrarPedidos);
+
+    //Mostrar un pedido por su ID
+    router.get('/pedidos/:idPedido', pedidosController.mostrarPedido);
+
+    // Actualizar Pedidos
+    router.put('/pedidos/:idPedido', pedidosController.actualizarPedido);
+
+    // Eliminar pedido
+    router.delete('/pedidos/:idPedido', pedidosController.eliminarPedido);
 
     return router;
 }

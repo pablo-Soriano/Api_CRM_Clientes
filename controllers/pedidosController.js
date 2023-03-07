@@ -21,7 +21,7 @@ exports.mostrarPedidos = async(req, res, next) => {
         });
         res.json(pedidos);
     } catch (error) {
-        console.loog(error);
+        console.log(error);
     }
 }
 

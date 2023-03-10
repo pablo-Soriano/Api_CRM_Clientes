@@ -27,6 +27,9 @@ app.use(cors());
 // Rutas de la app
 app.use('/', routes());
 
+// Carpeta publica (para mostrar imagenes en el front - React)
+app.use(express.static('uploads'));
+
 
 
 

@@ -3,6 +3,7 @@ const Producto = require("../models/Productos");
 const multer = require('multer');
 const shortid = require('shortid');
 const fs = require('fs');
+const Productos = require("../models/Productos");
 
 const configuracionMulter = {
     storage: fileStorage = multer.diskStorage({
@@ -107,6 +108,20 @@ exports.eliminarProducto = async (req, res, next) => {
     try {
         await Producto.findByIdAndDelete({ _id: req.params.idProducto});
         res.json({ mensaje: 'El producto se ha eliminado'});
+    } catch (error) {
+        console.log(error);
+        next();
+    }
+}
+
+
+exports.buscarProducto = async (req, res, next) => {
+    try {
+        // obtener el query
+        const {query} = req.params;
+        // regExp() = expresion regular, el primer parametro es el query y el segundo que sea key insensitive, no importa mayuscula o minusculas
+        const producto = await Productos.find({ nombre: new RegExp(query, 'i') }); 
+        res.json(producto);
     } catch (error) {
         console.log(error);
         next();

@@ -5,6 +5,8 @@ const productosController = require('../controllers/productosController');
 const pedidosController = require('../controllers/pedidosController');
 const usuariosController = require('../controllers/usuariosController');
 
+// Middleware para proteger rutas
+const auth = require('../middleware/auth');
 
 module.exports = function() {
 
@@ -13,7 +15,7 @@ module.exports = function() {
     router.post('/clientes', clienteController.nuevoCliente);
 
     //Muestra todos los clientes
-    router.get('/clientes', clienteController.mostrarClientes);
+    router.get('/clientes', auth, clienteController.mostrarClientes);
 
     // Mostrar un cliente por medio de su id
     router.get('/clientes/:idCliente', clienteController.mostrarCliente);

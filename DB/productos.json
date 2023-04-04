@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "642c54cfc74d9b430a39ae2c"
+  },
+  "nombre": "Camisa React-JS",
+  "precio": 45,
+  "imagen": "ALyxIre2H.jpeg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "642c54f1c74d9b430a39b253"
+  },
+  "nombre": "Camiseta Drupal",
+  "precio": 32,
+  "imagen": "tBtAJzKvv.jpeg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "642c550cc74d9b430a39b401"
+  },
+  "nombre": "Camiseta Vuejs",
+  "precio": 38,
+  "imagen": "5tP97gH0U.jpeg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "642c551fc74d9b430a39b530"
+  },
+  "nombre": "Camiseta HTML",
+  "precio": 28,
+  "imagen": "kK2mTnDO1.jpeg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "642c5539c74d9b430a39b623"
+  },
+  "nombre": "Camiseta  NodeJs",
+  "precio": 46,
+  "imagen": "ev-IEdZR1.jpeg",
+  "__v": 0
+}]

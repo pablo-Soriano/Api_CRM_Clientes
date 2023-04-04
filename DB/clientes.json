@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "63ffa6d71df158420d82dcb1"
+  },
+  "nombre": "Marcelino",
+  "apellido": "Landaverde",
+  "empresa": "Tiburones",
+  "email": "marcelino@tiburones.com",
+  "telefono": "32659814",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ffa7361df158420d82dcb3"
+  },
+  "nombre": "Pablo",
+  "apellido": "Soriano",
+  "empresa": "Sorbros",
+  "email": "psoriano@sorbros.com",
+  "telefono": "77884455",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64090bb5ab0c8f4791b88abc"
+  },
+  "nombre": "Miguel",
+  "apellido": "Peña",
+  "empresa": "Telefonica",
+  "email": "miguel.p@telefonica.com",
+  "telefono": "77885544",
+  "__v": 0
+}]

@@ -1,0 +1,59 @@
+[{
+  "_id": {
+    "$oid": "642c57fd49510487a85a77cd"
+  },
+  "cliente": {
+    "$oid": "63ffa6d71df158420d82dcb1"
+  },
+  "pedido": [
+    {
+      "producto": {
+        "$oid": "642c54cfc74d9b430a39ae2c"
+      },
+      "cantidad": 1,
+      "_id": {
+        "$oid": "642c54cfc74d9b430a39ae2c"
+      }
+    },
+    {
+      "producto": {
+        "$oid": "642c5539c74d9b430a39b623"
+      },
+      "cantidad": 2,
+      "_id": {
+        "$oid": "642c5539c74d9b430a39b623"
+      }
+    }
+  ],
+  "total": 137,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "642c581949510487a85a79bb"
+  },
+  "cliente": {
+    "$oid": "63ffa7361df158420d82dcb3"
+  },
+  "pedido": [
+    {
+      "producto": {
+        "$oid": "642c551fc74d9b430a39b530"
+      },
+      "cantidad": 1,
+      "_id": {
+        "$oid": "642c551fc74d9b430a39b530"
+      }
+    },
+    {
+      "producto": {
+        "$oid": "642c550cc74d9b430a39b401"
+      },
+      "cantidad": 1,
+      "_id": {
+        "$oid": "642c550cc74d9b430a39b401"
+      }
+    }
+  ],
+  "total": 66,
+  "__v": 0
+}]
